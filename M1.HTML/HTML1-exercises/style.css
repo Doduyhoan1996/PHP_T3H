@@ -1,0 +1,19 @@
+h1{
+    color: red;
+    background: yellow;
+}
+h2{
+    color: blue;
+    background: pink;
+}
+h3{
+    color: white;
+    background: black;
+}
+p{
+    color: honeydew;
+    background: sienna;
+}
+div{
+    background: darkgray;
+}
