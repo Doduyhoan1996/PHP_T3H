@@ -5,6 +5,9 @@
     <title>Title</title>
     <link rel="stylesheet" href="normalize.css" />
     <style type="text/css">
+        img {
+            width: 350px;
+        }
         #target1 {
             width: 50%;
             background: green;
@@ -13,13 +16,23 @@
             margin: 50px auto;
             text-align: center;
         }
+        #target1 img {
+            display: inline-block;
+        }
         #target2 {
             width: 50%;
             background: green;
             color: white;
             padding: 20px;
             margin: 50px auto;
-            text-align: center;
+        }
+        #target2 img {
+            margin: 0 auto;
+            display: block;
+        }
+        #target3 {
+            margin: 50px auto;
+            display: block;
         }
     </style>
 
@@ -27,14 +40,16 @@
 <body>
 
 <div id="target1">
-    Căn giữa khối block theo chiều ngang
+    <img src="waiting.jpg" alt="hinh anh">
+    <img src="waiting.jpg" alt="hinh anh">
 </div>
 
 <div id="target2">
-    Căn giữa khối block theo chiều ngang <br>
-    Căn giữa khối block theo chiều ngang <br>
-    Căn giữa khối block theo chiều ngang <br>
+    <img src="waiting.jpg" alt="hinh anh">
+    <img src="waiting.jpg" alt="hinh anh">
 </div>
+
+<img id="target3" src="waiting.jpg" alt="hinh anh">
 
 
 

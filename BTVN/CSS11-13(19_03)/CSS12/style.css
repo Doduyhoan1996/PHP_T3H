@@ -1,0 +1,9 @@
+div{
+	background-image: url('http://baoquangngai.vn/dataimages/201106/original/images504676_a.jpg'),url('http://tranhphongcanhdep.com.vn/wp-content/uploads/2018/09/tranh-phong-canh-thien-nhien-thao-nguyen-xanh-mat-515685869.jpg');
+	width: 500px;
+	height: 500px;
+	padding: 55px;
+	background-repeat: no-repeat;
+	background-position: bottom left,top right;
+	background-size: 300px,400px;
+}
