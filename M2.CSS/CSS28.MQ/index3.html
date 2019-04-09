@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<style type="text/css">
+    .container{
+        background-color: #2faaf1;
+        overflow:auto;
+    }
+    .container .sidebar{
+        float: left;
+        background-color: #FFFF00;
+        color: white;
+        width: 30%;
+    }
+    .container .main{
+        float: right;
+        background-color: crimson;
+        color: white;
+        width: 70%;
+    }
+    @media screen and (max-width: 700px){
+        /* CSS MOBILE màn hình có độ rộng từ 700px trở xuống*/
+        .container .sidebar{
+            float: none;
+            width: 100%;
+        }
+        .container .main{
+            float: none;
+            width: 100%;
+
+        }
+    }
+</style>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+                <li><a href="#">Menu 4</a></li>
+                <li><a href="#">Menu 5</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        CSS @media Reference
+        For a full overview of all the media types and features/expressions, please look at the @media rule in our CSS reference.
+
+        Tip: To learn more about responsive web design (how to target different devices and screens), using media query breakpoints, read our Responsive Web Design Tutorial.
+    </div>
+</div>
+</body>
+</html>
