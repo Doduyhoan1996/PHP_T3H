@@ -129,12 +129,9 @@ main content
 .Services{
     margin-top: 100px;
 }
-.Services .container .row{
-    padding-left: 98px;
-}
+
 .Services .container h3{
     padding-bottom: 67px;
-    padding-left: 75px;
 }
 .Services-row{
     width: 350px;
@@ -154,7 +151,7 @@ main content
 
 .Services-row img{
     position: absolute;
-    left: 100px;
+    left: 120px;
     top: 70px;
 }
 .Services-row-select{
@@ -197,7 +194,7 @@ main content
     position: absolute;
     z-index: 2;
     text-align: center;
-    left: 470px;
+    left: 25%;
 }
 .send_mail input{
     text-align: center;
