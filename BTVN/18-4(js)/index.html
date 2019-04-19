@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="container">
+    <h2>Bảng</h2>
+    <table class="table table-bordered" id="target" style="display: table">
+        <thead>
+        <tr>
+            <th>Tên</th>
+            <th>Tuổi</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>John</td>
+            <td>12</td>
+            <td>john@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Mary</td>
+            <td>11</td>
+            <td>mary@gmail.com</td>
+        </tr>
+        <tr>
+            <td>July</td>
+            <td>20</td>
+            <td>july@gmail.com</td>
+        </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-success" onclick="document.getElementById('target').style.display='table';">Hiện table</button>
+    <button class="btn btn-success" onclick="document.getElementById('target').style.display='none';">Ẩn table</button>
+
+</div>
+<script type="text/javascript">
+    // document.getElementById('target').style.display='table';
+    // document.getElementById('target').style.display='none';
+</script>
+
+</body>
+</html>
