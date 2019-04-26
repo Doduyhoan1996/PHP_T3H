@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    // Kiểu dữ liệu chuỗi
+    var name="Nguyễn Tuấn Anh";
+    // Kiểu Số
+    var age=18;
+    // Kiểu  đối tượng
+    var obj={}; //Khai báo đối tượng
+    // Vừa khai báo đối tượng vừa khai báo thuộc tính của đối tượng
+    var student = {name:"Nguyễn Tuấn Anh",age:18};
+    /**
+     * Khai báo đối tượng và khai báo
+     * các thuộc tính của đối tượng trên các dòng khác nhau
+     */
+    var student2 ={};
+    student2.name="Nguyễn Tôn Anh";
+    student2.age=18;
+
+    // Kiểu boolean true hoặc false
+    var gender1=true;
+    var gender2=false;
+
+    // Kiểu dữ liệu dạng mảng
+
+    var list_name = ["Nguyễn A","Nguyễn B","Lý C"];
+    var list_age =[21,22,12];
+    var list_student= [student,student2];
+    // Mảng thì bao gồm nhiều phần tử có đánh số thứ tự mà thuật ngữ gọi là key
+    // key trong mảng của js và php thì bắt đầu từ 0
+    // Mỗi phần tử trong mảng phân cách bởi dấu phẩy , và có 1 key duy nhất
+
+    // Truy cập vào phần tử của mảng
+    console.log('list_name[2]: '+ list_name[2] );
+    console.log('list_age[0]: '+ list_age[0]);
+    console.log('list_studen[1].name: '+ list_student[1].name);
+    console.log('list_studen[1].age: '+ list_student[1].age);
+
+    // Kiểu underfined
+    var a; //underfined xuất hiện khi mà chúng ta không gán giá trị cho biến
+    // underfined có nghĩa là không xác định
+
+    // lệnh typeof
+    // trả về kiểu dữ liệu của biến
+    console.log('typeof a:' + typeof a);
+    console.log('typeof name: ' + typeof name);
+    console.log('typeof age: ' + typeof age);
+    console.log('typeof gender1: ' + typeof gender1);
+    console.log('typeof gender2: ' + typeof gender2);
+    console.log('typeof student2: ' + typeof student2);
+    console.log('typeof list_name: ' + typeof list_name);
+
+    // dạng rỗng
+    var name3="";
+
+    // dạng null (không có gì cả) khác với underfined là không được khai báo
+    var data=null;
+    console.log('typeof data:'+ typeof data);
+</script>
+
+</body>
+</html>

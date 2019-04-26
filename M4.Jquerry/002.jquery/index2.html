@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>title</title>
+	<link rel="stylesheet" href="">
+	<script
+  	src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
+	integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI="
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<div>
+		<p>Jquery Hide and show</p>
+	</div>
+	<div>
+		<button id="Hide">Ẩn</button>
+		<button id="Show">Hiện</button>
+
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#Hide').click(function(){
+				$('p').hide();
+			});
+		});
+		$(document).ready(function() {
+			$('#Show').click(function(){
+				$('p').show();
+			});
+		});
+	</script>
+	
+</body>
+</html>

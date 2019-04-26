@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <h1>thay đổi nội dung của 1 thẻ H1 bằng javascript</h1>
+    <h2 id="target">Nội dung khởi đầu</h2>
+    <h1>Yêu cầu khi load lại trang thẻ H2 có id target sẽ chuyển nội dung thành hello javascript</h1>
+    <p>document.getElementById('target').innerHTML='Hello Javascript';</p>
+    <ol>
+        <li>document là toàn bộ trang html hay còn gọi là văn bản html . document là object trong javascript</li>
+        <li>getElementById('Id') : chọn cái thẻ html có thuộc tính id lad giá trị trong ngoặc</li>
+        <li>innerHTML : nội dung bên trong html selector do lệnh getElementById của js chọn</li>
+        <li>= phép gán. gán về phải sang vế trái</li>
+        <li> các chuỗi trong js phải để trong dấu ' ' hay " " </li>
+    </ol>
+
+    <script type="text/javascript">
+        document.getElementById('target').innerHTML='Hello Javascript';
+    </script>
+</body>
+</html>

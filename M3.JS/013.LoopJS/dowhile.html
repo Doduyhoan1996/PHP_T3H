@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>title</title>
+</head>
+<body>
+	<h1>Vòng lặp while</h1>
+	<pre>
+		do{
+		// code block to be executed
+		// code thực thi
+	}while(điều_kiện)
+	</pre>
+	<div style="color: red">
+		<h1>Vòng lặp while chỉ chạy khi điều kiện trong ngoặc đúng</h1>
+		<h1>Vong lặp do... while sẽ chạy khi điều kiện trong ngoặc đúng nhưng khi điều kiện không đúng thì nó chỉ chạy một làn đầu tiên duy nhất</h1>
+	</div>
+
+	<div>
+		<table style="width: 100%;background: green;color: tomato">
+			<thead>
+				<tr>
+					<td>STT</td>
+					<td>Tên</td>
+					<td>Diện tích</td>
+
+				</tr>
+			</thead>
+			<tbody id="content">
+				<tr>
+					<td>1</td>
+					<td>ha noi</td>
+					<td>100</td>
+				</tr>
+				
+
+			</tbody>
+		</table>
+		<div><button onclick="generateProvince()">Tạo Data</button></div>
+	</div>
+
+	<script type="text/javascript">
+		var i=0;
+		do{
+			console.log(i);
+        	i++;
+    	   } while (i <= 10)
+    	  function generateProvince() {
+    	  	var html='';
+			var i=0;
+			// khởi tạo đối tượng
+			var hanoi={id:1,name:'ha noi',s:100};
+			var hcm={id:2,name:'ho chi minh',s:100};
+			
+			var bd={id:3,name:'binh duong',s:100};
+			var cm={id:4,name:'Ca Mau',s:100};
+			var la={id:5,name:'Long an',s:100};
+			var vl={id:6,name:'vinh long',s:100};
+			var ct={id:7,name:'can tho',s:100};
+			var province=[hanoi,hcm,bd,cm,la,vl,ct];
+
+			do{
+				console.log(i);
+				html+='<tr>';
+				html+='<td>' + province[i].id +'</td>';
+				html+='<td>' + province[i].name +'</td>';
+				html+='<td>' + province[i].s +'</td>';
+				html+='</tr>';
+				i++;
+			}while(i<province.length)
+			 document.getElementById('content').innerHTML = html;
+    	  }
+
+	</script>
+
+</body>
+</html>
