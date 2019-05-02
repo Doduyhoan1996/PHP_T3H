@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>phương thức val() lấy nội dung bên trong thẻ input hay textarea</h1>
+<form name="login" method="post">
+    <label>Username</label>
+    <input type="text" name="hoten" >
+    <button id="target">RUN</button>
+</form>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
+        integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI="
+        crossorigin="anonymous">
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#target").on("click",function () {
+            var txt = $("input[name='hoten']").val();
+            alert("Chào: "+ txt);
+        });
+        });
+</script>
+
+</body>
+</html>

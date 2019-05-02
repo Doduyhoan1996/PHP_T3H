@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Sự kiện forcus để con trỏ chuột vào 1 ô input</h1>
+
+<form name="login" method="post">
+    <div>
+        <label>Họ Tên</label>
+        <input type="text" name="username" value="">
+    </div>
+    <div>
+        <label>Nơi ở</label>
+        <input type="text" name="location" value="">
+    </div>
+    <p style="color: red"></p>
+</form>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
+        integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI="
+        crossorigin="anonymous">
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("input").focus(function () {
+            $(this).css("border","1px solid red");
+        })
+    });
+</script>
+
+</body>
+</html>

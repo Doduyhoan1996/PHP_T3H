@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Phương thức html() trong JQ sẽ lấy văn bản trong selector được chọn <p>Thẻ p</p></h1>
+<p>html() lấy tất cả code html và text() bên trong selector được chọn</p>
+
+<button id="target">lấy html</button>
+<script
+        src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
+        integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI="
+        crossorigin="anonymous">
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#target").on("click",function () {
+            var html = $("h1").html();
+            alert(html);
+        })
+    });
+</script>
+</body>
+</html>

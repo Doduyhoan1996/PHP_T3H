@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Sự kiện Double Click trong jquery</h1>
+<p>Test</p>
+<button id="eclick">double Click vào đây</button>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
+        integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI="
+        crossorigin="anonymous">
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+           $("#eclick").dblclick(function () {
+               alert("trigger dblclick");
+               $("p").html("sự kiện click");
+           })
+        });
+</script>
+
+</body>
+</html>

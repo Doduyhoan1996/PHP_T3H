@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>phương thức attr() lấy giá trị của thuộc tính bên trong attr()</h1>
+<img src="https://znews-photo.zadn.vn/w660/Uploaded/natmzz/2019_05_02/mee_2.jpg" alt="img1" id="img1">
+<a id="href1" href="https://news.zing.vn/">Thẻ link</a>
+<button id="target">RUN</button>
+<script
+        src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
+        integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI="
+        crossorigin="anonymous">
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#target").on("click",function () {
+            var img_src =$("#img1").attr("src");
+            var a_href =$("#href1").attr("href");
+
+            console.log(img_src);
+            console.log(a_href);
+        })
+        });
+</script>
+
+</body>
+</html>
