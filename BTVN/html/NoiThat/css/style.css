@@ -215,33 +215,46 @@ main content
 }
 
 /*/////////////////*/
-.testimol {
-    text-align: center;
+#testimoniyal{
     background: #f8f8f8;
-    padding-bottom: 100px;
-}
-.testimol h4{
-    padding-top: 90px;
-    padding-bottom: 60px;
-}
-.testimol h5{
-    font-size:17px ;
-    color: #fb8b52;
-}
-.testimol p{
-    font-size: 15px;
-    color: #888888;
-    padding: 15px 301px;
-}
-.testimol span{
-    color: #777777;
-}
-.square i{
-    font-size: 10px;
 
 }
-.square i:hover{
-    background: #fc7029;
+#testimoniyal .container{
+    min-height: 592px;
+    position: relative;
+    padding-top: 100px;
+}
+#testimoniyal .header{
+    position: absolute;
+    font-size: 587px;
+    top: -229px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif !important;
+}
+#testimoniyal h2{
+    margin-bottom: 40px;
+}
+#testimoniyal .slide ul{
+    position: static;
+    margin-left: 30px;
+}
+#testimoniyal .slide img{
+    margin-bottom: 30px;
+}
+#testimoniyal .slide p{
+    margin-bottom: 32px;
+}
+#testimoniyal .slide ul li{
+    list-style-type: square;
+    width: 20px;
+    font-size: 30px;
+
+    padding: 0;
+    color:#dbdada;
+    background: none;
+}
+#testimoniyal .slide ul li.active{
+    color:#f66c27;
 }
 /*//////*/
 .project{
@@ -285,6 +298,7 @@ footer css
 */
 .footer{
     background: linear-gradient(to right, #f48146 50%, #ffffff 50%);
+
 }
 .footer .contact-form{
     box-sizing: border-box;
@@ -381,4 +395,12 @@ footer css
 }
 .footer .social-icon .last i:hover{
     background: #2faaf1;
+}
+@media only screen and (min-width: 0px) and (max-width: 699px) {
+    .footer{
+        background: none;
+    }
+    .contact-form .content-form{
+        margin-right: 0;
+    }
 }
