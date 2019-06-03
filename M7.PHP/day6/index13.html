@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+    WHERE CustomerName LIKE 'a%'	tìm các giá trị bắt đầu là "a"
+    WHERE CustomerName LIKE '%a'	tìm các giá trị kết thúc là a
+    WHERE CustomerName LIKE '%or%'	tìm các giá trị chứa "or"
+    WHERE CustomerName LIKE '_r%'	tìm các giá trị mà "r" là chữ thứ 2
+    WHERE CustomerName LIKE 'a_%_%' tìm các giá trị bắt đầu là a và có ít nhất 3 ký tự
+    WHERE CustomerName LIKE 'a%o'   tìm các giá trị bắt đầu là :"a" kết thúc là "o"
+
+     Ví dụ
+        SELECT * FROM customers WHERE first_name LIKE 'h%'
+        tìm tất cả các khách hàng bắt đầu là chữ h
+</pre>
+</body>
+</html>
